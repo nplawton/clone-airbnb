@@ -1,0 +1,27 @@
+Day 1 Assignments
+
+HEADER TICKETS:
+Airbnb Logo (H1D)
+Search Bar with search button on right end w/on enter key submit (H2)
+Home Button 'Airbnb your home' (H3D)
+Globe Button (H4)
+Login Button (H5)
+
+UB TICKETS:
+Name of Property (UB1)
+Rating - Reviews Button - !Superhost? (UB2)
+
+
+sCouch
+
+
+
+sDean
+
+
+
+nLawton
+
+
+
+jTorres
