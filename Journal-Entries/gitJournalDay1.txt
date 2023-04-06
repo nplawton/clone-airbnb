@@ -12,5 +12,6 @@ git add -A
 git commit -m '(comment)'
 git push origin main (or whichever branch youre working on)
 
+
 PULL CHANGES TO BRANCH
 git pull main (or whichever branch youre working on)
