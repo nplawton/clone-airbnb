@@ -8,7 +8,7 @@ git branch -M main // (or whichever branch youre working on)
 (if you get an error on origin add, type 'git remote rm origin' and then add again)
 
 PUSH COMMITS/CHANGES TO BRANCH
-git add -A 
+git add . 
 git commit -m '(comment)'
 git push origin main (or whichever branch youre working on)
 
