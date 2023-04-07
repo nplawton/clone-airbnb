@@ -10,18 +10,6 @@ Login Button (H5)
 UB TICKETS:
 Name of Property (UB1)
 Rating - Reviews Button - !Superhost? (UB2)
-
-
-sCouch
-
-
-
-sDean
-
-
-
-nLawton
-
-
-
-jTorres
+Location Button (L2)
+Share Button (UB4)
+Heart + Save Button (UB5)
