@@ -1,0 +1,250 @@
+.share_wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+#share_container{
+    margin-left: auto;
+    margin-bottom: -4px;
+}
+
+#share_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+#share_modal{
+    position: fixed;
+    width: 800px;
+    height: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    padding: 50px;
+    z-index: 1000;
+    overflow-y: scroll;
+    
+}
+
+#share_modal2{
+    position: fixed;
+    width: 600px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgray;
+    padding: 50px;
+    z-index: 1000;
+    overflow-y: scroll;
+    
+}
+
+#shareBtn{
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#shareBtn:hover{
+    background: whitesmoke;
+}
+
+#share_img{
+    height: 25px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+#share_close{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+#interface_container{
+    display: grid;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#share_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#share_site_name{
+    display: flex;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#share_site_img{
+    border-radius: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+#shareBtn_container{
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 40px;
+}
+
+#optionBtn{
+    display: flex;
+    height: 80px;
+    width: 300px;
+    border-radius: 20px;
+    background: white;
+    font-weight: bold;
+    align-items: center;
+    font-size:20px;
+    padding-left: 15px;
+}
+
+#optionBtn:hover{
+    background-color: rgba(112, 112, 112, 0.2);
+}
+
+#option_img{
+    height: 40px;
+    width: 40px;
+    margin-right: 50px;
+}
+
+#option_img1{
+    height: 60px;
+    width: 60px;
+    margin-right: 30px;
+}
+
+#option_interface{
+    padding: 20px;
+    display: grid;
+}
+
+#option_top{
+    display: inline-flex;
+    align-items: center;
+}
+
+#option_globe{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+#option_login{
+    height: 30px;
+    width: 30px;
+}
+
+#toprow_text{
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    margin-right: 240px;
+    white-space: nowrap;
+}
+
+#option_accout{
+    background-color: rgba(218, 165, 32, 0.6);
+    height: 200px;
+    padding: 20px;
+}
+
+#account_title{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#account_sym{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+#accountBtn{
+    background-color: blue;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#device-top{
+    display: flex;
+    padding-top: 20px;
+}
+
+#device_text{
+    color: gray;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 260px;
+}
+
+#device_option{
+    font-size: 15px;
+}
+
+#device_option:hover{
+    background-color: rgba(112, 112, 112, 0.2);
+}
+
+#device_subtitle{
+    color: gray;
+    font-weight: normal;
+    font-size: 15px;
+    margin-right: 260px;
+    white-space: nowrap;
+}
+
+#lower_option{
+    display: flex;
+    padding-top: 20px;
+}
+
+#share_platform{
+    display: flex;
+}
+
+#platform_text{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+#platform_text1{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+#platfromImg{
+    height: 50px;
+    width: 50px;
+    margin-right: 90px;
+    margin-bottom: 10px;
+}
+
+#platfromImg1{
+    height: 50px;
+    width: 50px;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    background-color: green;
+}

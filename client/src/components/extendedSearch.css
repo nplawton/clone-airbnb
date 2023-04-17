@@ -1,0 +1,670 @@
+/* Search Bar in SearchHeader.jsx */
+
+#searchModal{
+    position: fixed;
+    width: 100vw;
+    height: 190px;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+#first_searchBtn{
+    background: none;
+    border: none;
+}
+
+#overlay_search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+/* Search Header */
+
+.search_mainheader {  
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 80px !important;
+    background-color: #fff !important; 
+    max-width: 1095px !important
+
+}
+
+#search_mainheader{
+    margin-top: -5px;
+    margin-left: 400px;
+}
+
+/* Logo */
+
+#search_logo{
+    cursor: pointer; 
+    background: none; 
+    border: none;
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#search_logo_img{
+    width: 30px; 
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+
+/* Stay Menu Modal */
+
+#stay_modal{
+    position: fixed;
+    width: 920px;
+    height: 80px;
+    top: 15%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(112, 112, 112, .2);
+    z-index: 1000;
+    border-radius: 50px;
+}
+
+/* New Searchbar Header Styling */
+
+#option_container{
+    display: flex;
+    white-space: nowrap;
+    margin-left: -200px;
+}
+
+#search_options1, #search_options2, #search_options3{
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 20px;
+    border: none;
+    background: none;
+}
+
+#search_options1:hover, #search_options2:hover, #search_options3:hover{
+    color: gray;
+    text-decoration: underline !important; 
+}
+
+/* Stay Search Menu */
+
+.stay_search_section{
+    display: flex;
+}
+
+.selectionBtn{
+    margin-top: -14px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 200px;
+    font-size: 20px;
+    background: none;
+}
+
+.button_subtext{
+    grid-column: 1;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+.selectionBtn_join{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-right: 10px;
+    width: 260px;
+    font-size: 20px;
+    background: none;
+}
+
+.selectionBtn_join_btnSwitch{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+    margin-left: 440px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-right: 10px;
+    width: 260px;
+    font-size: 20px;
+    background: none;
+}
+
+.search_menu_input{
+    grid-column: 2;
+    display: flex;
+    position: absolute;
+    border-radius: 30px;
+    height: 55px;
+    width: 140px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 95px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search_menu_icon{
+    height: 45px;
+    max-width: auto;
+}
+
+/* Where Btn Section/Modal */
+
+.popup_wrapper{
+    margin-top: -5px;
+    padding: 0;
+    z-index: 1;
+    border-right: 2px solid lightgray;
+}
+
+.popup_wrapper:hover{
+    border-right: none;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 30px;
+}
+
+#where_modal{
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 49%;
+    left: 23%;
+    border-radius: 40px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+#where_modal_btn{
+    background: none;
+    border: none;
+}
+
+/* Where Map Screen Fillables */
+
+.map_screen_holder{
+    display: grid;
+}
+
+.map_screen_title{
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.map_screen_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.map_screen_btn{
+    border: none;
+    background: none;
+}
+
+.map_screen_btn:hover{
+    border: 2px solid black;
+    outline: none;
+}
+
+#map_screen_img{
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#map_screen_img:hover{
+    outline: none;
+}
+
+.map_screen_subtext{
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Check In Calendar Modal */
+
+#checkin_modal{
+    position: fixed;
+    width: 900px;
+    height: 500px;
+    top: 49%;
+    left: 47%;
+    border-radius: 40px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+/* Who/Guest Section */
+
+.guest_wrapper{
+    margin-top: -5px;
+    padding: 0;
+    z-index: 1;
+}
+
+.guest_wrapper:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 30px;
+}
+
+.guest_modal{
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 49%;
+    left: 58%;
+    border-radius: 40px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+.guest_type{
+    display: inline-flex;
+    margin: 20px;
+}
+
+.guest_descrip{
+    display: grid;
+}
+
+#guest_adult{
+    font-size: 25px;
+    margin-bottom: -20px;
+    margin-right: 195px;
+}
+
+#guest_child{
+    font-size: 25px;
+    margin-bottom: -20px;
+    margin-right: 170px;
+}
+
+#guest_infant{
+    font-size: 25px;
+    margin-bottom: -20px;
+    margin-right: 190px;
+}
+
+#guest_pets{
+    font-size: 25px;
+    margin-bottom: -20px;
+    margin-right: 220px;
+}
+
+#guest_subtext{
+    font-weight: normal;
+    font-size: 20px;
+    white-space: nowrap;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.guest_count{
+    display: flex;
+}
+
+.countBtn{
+    border-radius: 100px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+#current_count{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+
+}
+
+/* Pet Modal Section */
+
+.pet_wrapper{
+    margin-top: -5px;
+    padding: 0;
+    z-index: 1;
+}
+
+#pet_subtext{
+    font-weight: normal;
+    font-size: 20px;
+    white-space: nowrap;
+    color: grey;
+    margin-top: 15px;
+    margin-left: -5px;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+#pet_modal{
+    position: fixed;
+    width: 600px;
+    height: 800px;
+    top: 50%;
+    left: 60%;
+    border-radius: 40px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+
+#pet_modal_close{
+    background: none;
+    border: none;
+}
+
+#service_container{
+    padding: 20px;
+}
+
+#service_img{
+    height: 500px;
+    width: 500px;
+}
+
+#service_title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#service_top{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#service_middle{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#service_btn{
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+
+/* Experiences (Exp) Menu Style Settings */
+
+/* Exp Menu Modal */
+
+#exp_modal{
+    position: fixed;
+    width: 920px;
+    height: 80px;
+    top: 15%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(112, 112, 112, .2);
+    z-index: 1000;
+    border-radius: 50px;
+}
+
+#expBtn{
+    background: none;
+    border: none;
+}
+
+#exp_search_section{
+    display: flex;
+}
+
+.exp_guest_modal{
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    top: 41%;
+    left: 58%;
+    border-radius: 40px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+#exp_whereBtn{
+    margin-top: -14px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 270px;
+    font-size: 20px;
+    background: none;
+}
+
+#calendarBtn{
+    margin-top: -14px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 270px;
+    font-size: 20px;
+    background: none;
+}
+
+.exp_selectionBtn_join{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-right: 10px;
+    width: 330px;
+    font-size: 20px;
+    background: none;
+}
+
+.exp_search_menu_input{
+    grid-column: 2;
+    display: flex;
+    position: absolute;
+    border-radius: 30px;
+    height: 55px;
+    width: 140px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 158px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Tab Date Settings */
+
+#tab_holder{
+    position: fixed;
+    display: flex;
+    height: 60px;
+    width: 365px;
+    border-radius: 60px;
+    background: lightgrey;
+    margin-left: 230px;
+    margin-top: 30px;
+}
+
+#date_tabBtn{
+
+    border-radius: 20px;
+    background: none;
+    border: none;
+    height: 45px;
+    width: 165px;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#date_tabBtn:hover{
+    background-color: white;
+}
+
+/* Flex Settings */
+
+.flex_selectionBtn{
+    position: fixed;
+    margin-top: -10px;
+    margin-left: 18p0px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 413px;
+    font-size: 20px;
+}
+
+.flex_container{
+    display: grid;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#flex_start{
+    font-size: 30px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+
+.vaca_holder{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+#vacaBtn{
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 30px;
+    height: 40px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.range_holder{
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+    height: 200px;
+}
+
+#rangeBtn{
+   height: 140px;
+   width: 140px;
+   border-radius: 10px;
+   justify-content: center;
+   justify-items: center;
+   background-color: white;
+   margin-right: 10px; 
+}
+
+#range_img{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#month_text{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+#year_text{
+    font-size: 15px;
+    margin-top: -10px;
+    font-weight: normal;
+}
+
+#next_option_btn{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: -155px;
+    margin-left: 800px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#prev_option_btn{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: -155px;
+    margin-left: -30px;
+    font-size: 30px;
+    text-align: center;
+}

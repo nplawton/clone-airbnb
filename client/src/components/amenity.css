@@ -1,0 +1,363 @@
+#amenity_home {
+    margin: auto; /* center the element on the page */
+    width: 1120px;
+    display: grid;
+    grid-template-columns: auto; /* set the grid to have one column */
+    justify-content: flex-start; /* align items to the left of the grid */
+    align-items: flex-start; /* align items to the top of the grid */
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+#table_text{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#adminImg2 {
+    width: 123px;
+    height: auto;
+}
+
+#adminImg {
+    max-height: 24px;
+    margin-top: 8px;
+    width: auto;
+}
+
+#middle_top {
+    width: 653px;
+}
+
+
+#sleep_accomidation{
+    background-color: white;
+    border: 3px solid lightgrey;
+    height: 150px;
+    width: 250px;
+    border-radius: 30px;
+}
+
+#sleep_symbol{
+    padding-top: 5px;
+    padding-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+#amenity_sleep {
+    margin-left: 15px;
+}
+
+#sleep_room{
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sleep_type{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 15px;
+    color: gray;
+}
+
+#amenity_other {
+    margin-left: -10px;
+}
+
+#amenityBtn {
+    margin-left: 20px;
+}
+
+#other_text{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#symbol_text{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+#amenity_symbol{
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.btnWrapper{
+    position: relative;
+    z-index: 1;
+}
+
+#overlay_amenity{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+#amentity_modal{
+    position: fixed;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    padding: 50px;
+    z-index: 1000;
+}
+
+#amenity_close{
+    cursor: pointer;
+    background-color: white;
+}
+
+#amenityBtn{
+    margin-top: 20px;
+    height: 48px;
+    width: 209px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#table_title{
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+
+#table_grid{
+    display: grid;
+    height: 600px;
+    width: 700px;
+    overflow: scroll;
+   
+}
+
+#table_room{
+    font-size: 20px;
+    display: grid;
+}
+
+#room_items{
+    display: inline-flex;
+}
+
+#items_img{
+    height: 40px;
+    width: 40px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+#items_name{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#items_not_included{
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+
+/* Lower Left Genreal Layout */
+
+.lowerbody_left_container{
+    display: grid;
+}
+
+#left-top-section{
+    max-width: 613px;
+    display: grid;
+    padding: 20px;
+}
+
+#left_top{
+    display: grid;
+    margin-bottom: 30px;
+}
+
+#left_middle{
+    display: grid;
+    width: 613px;
+}
+
+#middle_top{
+   padding-left: 20px;
+   padding-bottom: 40px;
+   display: grid;
+}
+
+#middle_info{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#adminImg{
+    height: 40px;
+    margin-right: 20px;
+}
+
+#checkin_detail{
+    display: flex;
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+
+#checkin_text{
+    margin-top: 0;
+    color: gray;
+    font-weight: normal;
+}
+
+#air_text{
+    font-size: 20px;
+}
+
+.airWrapper{
+    z-index: 1;
+}
+
+#airBtn{
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#air_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+#air_modal{
+    position: fixed;
+    width: 1000px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    padding: 50px;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+#air_close{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* air_information styling */
+
+#air_title{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#air_top{
+    display: flex;
+}
+
+#air_column1, #air_column2{
+    display: inline-block;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#air_topic{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#air_detail{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: justify;
+    margin-top: 0;
+}
+
+#air_footer{
+    display: flex;
+    padding-left: 20px;
+}
+
+#air_footnote{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#air_footBtn{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Site info */
+#site_info{
+    padding: 20px;
+}
+
+#land_modal{
+    position: fixed;
+    width: 600px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgray;
+    padding: 50px;
+    z-index: 1000;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+#infoBtn{
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+#air_cover {
+    width: 653px;
+}
+
+#middle_section {
+    width: 653px;
+    margin-left: 20px;
+}
