@@ -3,7 +3,7 @@ import React from "react";
 import "../extendedSearch.css";
 
 const WhereMapScreen = ({ setWhereSubtext, setWhereOpen, 
-                        setCalendarOpen, setCheckinOpen }) => {
+                        setCalendarOpen, setCheckinOpen, setFlexOption }) => {
 
     const flexible = 'https://a0.muscache.com/pictures/f9ec8a23-ed44-420b-83e5-10ff1f071a13.jpg';
     const europe = 'https://a0.muscache.com/im/pictures/7b5cf816-6c16-49f8-99e5-cbc4adfd97e2.jpg?im_w=320';
@@ -12,56 +12,50 @@ const WhereMapScreen = ({ setWhereSubtext, setWhereOpen,
     const mexico = 'https://a0.muscache.com/im/pictures/a940f971-4ac1-413b-90dd-bd55965b215e.jpg?im_w=320';
     const sAmerica = 'https://a0.muscache.com/im/pictures/06a30699-aead-492e-ad08-33ec0b383399.jpg?im_w=320';
 
-    const handleFlex = (e) => {
-        setWhereSubtext(`Search destinations`);
+    const handleAllStates = () => {
         setWhereOpen(false);
         setCalendarOpen(true);
         setCheckinOpen(true);
+        setFlexOption(true);
+    }
+    
+    const handleFlex = (e) => {
+        setWhereSubtext(`Search destinations`);
+        
 
         e.target.style.border = '3px solid black';
     }
 
     const handleEurope = (e) => {
         setWhereSubtext(`Europe`);
-        setWhereOpen(false);
-        setCalendarOpen(true);
-        setCheckinOpen(true);
+        handleAllStates();
 
         e.target.style.border = '3px solid black';
     }
 
     const handleCanada = (e) => {
         setWhereSubtext(`Canada`);
-        setWhereOpen(false);
-        setCalendarOpen(true);
-        setCheckinOpen(true);
-
+        handleAllStates();
         e.target.style.border = '3px solid black'
     }
 
     const handleAsia = (e) => {
         setWhereSubtext(`Southeast Asia`);
-        setWhereOpen(false);
-        setCalendarOpen(true);
-        setCheckinOpen(true);
+        handleAllStates();
 
         e.target.style.border = '3px solid black'
     }
 
     const handleMexico = (e) => {
         setWhereSubtext(`Mexico`);
-        setWhereOpen(false);
-        setCalendarOpen(true);
-        setCheckinOpen(true);
+        handleAllStates();
 
         e.target.style.border = '3px solid black'
     }
 
     const handleSouth = (e) => {
         setWhereSubtext(`South America`);
-        setWhereOpen(false);
-        setCalendarOpen(true);
-        setCheckinOpen(true);
+        handleAllStates();
 
         e.target.style.border = '3px solid black'
     }

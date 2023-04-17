@@ -169,6 +169,7 @@ const StaySearchMenu = ({ setSearchHeader }) => {
                             setWhereOpen={setWhereOpen}
                             setCalendarOpen={setCalendarOpen}
                             setCheckinOpen={setCheckinOpen}
+                            setFlexOption={setFlexOption}
                         />
                     </WhereModal>
                 </div>
@@ -205,9 +206,9 @@ const StaySearchMenu = ({ setSearchHeader }) => {
                                 </div>
                             </>
                         ) : (
-                                <div className="popup_wrapper">
+                                <div className="flex_wrapper">
                                     <button
-                                        className="flex_selectionBtn"
+                                        className="flex_menuBtn"
                                         style={{background: flexOption ? 'white' : 'none'}}
                                         onClick={handleFlexSwitch}
                                     >
@@ -255,60 +256,63 @@ const StaySearchMenu = ({ setSearchHeader }) => {
                                 />
                         }
                     </CheckInModal>                    
-                <div className="guest_wrapper">
                     {
                         btnSwitch ? (
-                            <button
-                                className="selectionBtn_join"
-                                id="guestBtn"
-                                style={{background: guestOpen ? 'white' : 'none'}}
-                                onClick={handleGuest}
-                            > 
-                                Who
-                                <h3 
-                                    className="button_subtext"
-                                    style={{fontWeight: fontWeight}}
-                                >
-                                    {guestSubtext}
-                                </h3>
-                                <button 
-                                    className='search_menu_input'
-                                    onClick={() => setSearchHeader(false)}
-                                >
-                                    <img 
-                                        className='search_menu_icon'
-                                        src='https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/600/FFFFFF/external-magnifying-glass-interface-kiranshastry-lineal-kiranshastry.png'
-                                        alt=""
-                                    />    
-                                    Search
+                            <div className="guest_wrapper">
+                                <button
+                                    className="selectionBtn_join"
+                                    id="guestBtn"
+                                    style={{background: guestOpen ? 'white' : 'none'}}
+                                    onClick={handleGuest}
+                                > 
+                                    Who
+                                    <h3 
+                                        className="button_subtext"
+                                        style={{fontWeight: fontWeight}}
+                                    >
+                                        {guestSubtext}
+                                    </h3>
+                                    <button 
+                                        className='search_menu_input'
+                                        onClick={() => setSearchHeader(false)}
+                                    >
+                                        <img 
+                                            className='search_menu_icon'
+                                            src='https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/600/FFFFFF/external-magnifying-glass-interface-kiranshastry-lineal-kiranshastry.png'
+                                            alt=""
+                                        />    
+                                        Search
+                                    </button>
                                 </button>
-                            </button>
+                            </div>
                         ) : (
-                            <button
-                                className="selectionBtn_join_btnSwitch"
-                                id="guestBtn"
-                                style={{background: guestOpen ? 'white' : 'none'}}
-                                onClick={handleGuest}
-                            > 
-                                Who
-                                <h3 
-                                    className="button_subtext"
-                                    style={{fontWeight: fontWeight}}
-                                >
-                                    {guestSubtext}
-                                </h3>
-                                <button 
-                                    className='search_menu_input'
-                                    onClick={() => setSearchHeader(false)}
-                                >
-                                    <img 
-                                        className='search_menu_icon'
-                                        src='https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/600/FFFFFF/external-magnifying-glass-interface-kiranshastry-lineal-kiranshastry.png'
-                                        alt=""
-                                    />    
-                                    Search
+                            <div className="flex_guest_wrapper">
+                                <button
+                                    className="btnSwitch_join"
+                                    id="guestBtn"
+                                    style={{background: guestOpen ? 'white' : 'none'}}
+                                    onClick={handleGuest}
+                                > 
+                                    Who
+                                    <h3 
+                                        className="button_subtext"
+                                        style={{fontWeight: fontWeight}}
+                                    >
+                                        {guestSubtext}
+                                    </h3>
+                                    <button 
+                                        className='search_menu_input'
+                                        onClick={() => setSearchHeader(false)}
+                                    >
+                                        <img 
+                                            className='search_menu_icon'
+                                            src='https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/600/FFFFFF/external-magnifying-glass-interface-kiranshastry-lineal-kiranshastry.png'
+                                            alt=""
+                                        />    
+                                        Search
+                                    </button>
                                 </button>
-                            </button>
+                            </div>
                         )
                     }
                     <GuestModal
@@ -320,7 +324,6 @@ const StaySearchMenu = ({ setSearchHeader }) => {
                             setTotalPets={setTotalPets}
                         />
                     </GuestModal>
-                </div>
             </div>
         </div>
     )
