@@ -6,10 +6,11 @@ import "./searchbar.css";
 import SearchModal from "./search-modal";
 import SearchHeader from "./searchbar-header-stepdown";
 import StaySearchMenu from "./stay-search-menu";
+import StayMenuModal from "./stay-menu-modal";
 
 
 const HeaderSearchBar = ({ lanData, setLanData, setCurrentLan, setCurrentCurrency,
-                        currData, setCurrData, }) => {
+                        currData, setCurrData, setMainHeader }) => {
     
     const [searchHeader, setSearchHeader] = useState(false);
 
@@ -37,7 +38,7 @@ const HeaderSearchBar = ({ lanData, setLanData, setCurrentLan, setCurrentCurrenc
                 searchHeader={searchHeader}
                 onClose={() => setSearchHeader(false)}
             >
-                <SearchHeader 
+                <SearchHeader
                     lanData={lanData}
                     setLanData={setLanData}
                     currData={currData}

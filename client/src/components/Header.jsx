@@ -35,6 +35,7 @@ const Header = ({ signedIn, setSignedIn, lanData, setLanData, currData,
                         setCurrData={setCurrData}
                         setCurrentLan={setCurrentLan}
                         setCurrentCurrency={setCurrentCurrency}
+                        setMainHeader={setMainHeader}
                     />
                 </div>
                 <div id="mainrightside">

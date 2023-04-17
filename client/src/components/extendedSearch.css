@@ -94,9 +94,16 @@
     background: none;
 }
 
-#search_options1:hover, #search_options2:hover, #search_options3:hover{
+#search_options1:hover, #search_options2:hover, 
+#search_options3:hover, #search_stay:hover{
     color: gray;
     text-decoration: underline !important; 
+}
+
+#search_stay{
+    margin: 0px;
+    font-weight: normal;
+    font-size: 20px;
 }
 
 /* Stay Search Menu */

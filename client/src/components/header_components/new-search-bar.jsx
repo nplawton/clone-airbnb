@@ -8,7 +8,8 @@ import ExpSearchMenu from "./exp-search-menu"
 
 const SearchBar = ({ setSearchHeader }) => {
 
-    const [stayMenu, setStayMenu] = useState(true);
+    const [stayMenu, setStayMenu] = useState(false);
+    const [stayText, setStayText] = useState(false)
     const [expMenu, setExpMenu] = useState (false);
     const [onlineMenu, setOnlineMenu] = useState (false);
 
@@ -17,6 +18,7 @@ const SearchBar = ({ setSearchHeader }) => {
         setStayMenu(true);
         setExpMenu(false);
         setOnlineMenu(false);
+        setStayText(true);
     }
 
     const handleExp = () => {
@@ -40,9 +42,14 @@ const SearchBar = ({ setSearchHeader }) => {
                     <button
                         id='search_options1'
                         onClick={handleStay}
-                        style={{textDecoration: stayMenu ? 'underline' : 'none'}}
+                        
                     >
-                        Stay
+                        <h1
+                            id='search_stay'
+                            style={{textDecoration: stayText ? 'underline' : 'none'}}
+                        >
+                            Stay
+                        </h1>
                     </button>
                     <StayMenuModal
                         stayMenu={stayMenu}

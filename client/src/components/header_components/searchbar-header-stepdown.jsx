@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import '../extendedSearch.css'
 import GlobeBtn from './globebtn_header_main';
@@ -8,6 +8,7 @@ import SearchBar from "./new-search-bar";
 const SearchHeader = ({ signedIn, setSignedIn, lanData, setLanData, currData, 
                         setCurrData, setCurrentLan, setCurrentCurrency, 
                         siteUsers, setSearchHeader }) => {
+
 
     const logo = 'https://seeklogo.com/images/A/airbnb-logo-1D03C48906-seeklogo.com.png'; 
 
@@ -21,7 +22,7 @@ const SearchHeader = ({ signedIn, setSignedIn, lanData, setLanData, currData,
                 <img id="search_logo_img" src={logo} /> Fantasybnb
             </button>
             <SearchBar
-                setSearchHeader={setSearchHeader} 
+                setSearchHeader={setSearchHeader}
             />
             <div id="mainrightside">
                 <div>

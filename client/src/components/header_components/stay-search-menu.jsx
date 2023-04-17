@@ -18,7 +18,7 @@ const StaySearchMenu = ({ setSearchHeader }) => {
     const [checkInSubtext, setCheckInSubtext] = useState('Add Dates');
     const [checkOutSubtext, setCheckOutSubtext] = useState('Add Dates');
     const [guestSubtext, setGuestSubtext] = useState('Add guests');
-    const [whereOpen, setWhereOpen] = useState(true);
+    const [whereOpen, setWhereOpen] = useState(false);
     const [calendarOpen, setCalendarOpen] = useState(false)
     const [checkinOpen, setCheckinOpen] = useState(false);
     const [checkOutOpen, setCheckOutOpen] = useState(false);
