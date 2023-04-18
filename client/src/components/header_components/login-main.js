@@ -12,7 +12,7 @@ const LogInButton = ({ signedIn, setSignedIn, siteUsers }) => {
     const loggedOut = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png';
     
     //Needs to be replaced with User Avatar//
-    const loggedIn = 'https://static.thenounproject.com/png/2055369-200.png';
+    const loggedIn = 'https://pbs.twimg.com/media/FB_W-xPWUAE996n.jpg';
     
     return (
         <div className="btnWrapper" id="login_main">

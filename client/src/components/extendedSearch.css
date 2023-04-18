@@ -221,8 +221,8 @@
     position: fixed;
     width: 500px;
     height: 500px;
-    top: 49%;
-    left: 23%;
+    top: 55%;
+    left: 20%;
     border-radius: 40px;
     padding: 20px;
     transform: translate(-50%, -50%);
@@ -286,7 +286,7 @@
     position: fixed;
     width: 900px;
     height: 500px;
-    top: 49%;
+    top: 58%;
     left: 47%;
     border-radius: 40px;
     padding: 20px;
@@ -312,7 +312,7 @@
     position: fixed;
     width: 500px;
     height: 500px;
-    top: 49%;
+    top: 56%;
     left: 58%;
     border-radius: 40px;
     padding: 20px;
@@ -483,7 +483,7 @@
     position: fixed;
     width: 500px;
     height: 350px;
-    top: 41%;
+    top: 45%;
     left: 58%;
     border-radius: 40px;
     padding: 20px;

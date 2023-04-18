@@ -6,7 +6,7 @@ import "../map.css";
 const MapModal = ({ positions }) => {
 
     const position = positions; //[latitude, longitude]
-    const zoomLevel = 15;
+    const zoomLevel = 17;
 
     const codingSpot = new Icon ({
         iconUrl: 'https://cdn-icons-png.flaticon.com/512/6805/6805897.png',

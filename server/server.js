@@ -72,6 +72,20 @@ server.get("/users", (req, res) => {
     })
   });
 
+  server.get("/properties/:id/reviews", (req, res, next) => {
+    const { id } = req.params;
+    sql`
+      SELECT r.*, u.avatar, u.firstname, u.lastname
+      FROM reviews r
+      JOIN users u ON r.userid = u.userid
+      WHERE r.propertyid = ${id}
+    `
+      .then((result) => {
+        res.json(result);
+      })
+      .catch(next);
+  });
+
   server.post("/reviews", function (req, res, next) {
     const requiredKeys = ["propertyid", "review", "rating", "userid"];
     if (

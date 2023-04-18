@@ -1,0 +1,107 @@
+#review_section {
+    float: center;
+    padding: 40px;
+    margin-left: 300px;
+}
+  
+#review_ratings {
+    float: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    width: 300px;
+    padding: 10px;
+    font-size:x-large;
+}
+  
+#review_categories {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: center;
+    width: 1050px;
+    height: 125px;
+    margin-bottom: 100px;
+}
+
+progress {
+    accent-color: rgb(0, 0, 0);
+    height: 15px;
+}
+
+#left {
+    float: left;
+    width: 500px;
+}
+
+#rev_cat_left {
+    text-align: left;
+    float: left;
+    width: 100px;
+    padding: 10px;
+}
+
+#rev_bar_left {
+    float: right;
+    width: 190px;
+    padding: 10px;
+}
+
+  #right {
+    float: right;
+    width: 500px;
+}
+
+#rev_cat_right {
+  text-align: left;
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+
+  #rev_bar_right {
+  float: right;
+  width: 190px;
+  padding: 10px;
+}
+
+#reviews{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1800px;
+    height: 800px;
+}
+
+#rev_map_container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    list-style-type: none
+}
+
+#rev_name {
+  font-size: larger;
+  margin-top: 20px;
+}
+
+#rev_year{
+   margin-top: -20px;
+}
+
+#rev_rev{
+    grid-row: 2;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+#avatars {
+    grid-column: 1;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#rev_main{
+    grid-row: 1;
+    display: flex;
+    width: 500px;
+}

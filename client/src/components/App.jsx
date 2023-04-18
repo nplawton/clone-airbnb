@@ -13,7 +13,7 @@ import "./nl-components.css"; //cilent/src/nl-components.css
 function App() {
 
   const [saveFav, setSaveFav] = useState(false);
-  const [positions, setPositions] = useState([46.189091, -123.834709]);
+  const [positions, setPositions] = useState([-37.857759, 175.679769]);
   const [signedIn, setSignedIn] = useState(false);
   const [lanData, setLanData] = useState([{}]);
   const [currData, setCurrData] = useState([{}]);

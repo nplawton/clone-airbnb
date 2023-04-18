@@ -151,18 +151,18 @@ VALUES
 
 
 INSERT INTO users 
-    (firstname, lastname, host, email)
+    (firstname, lastname, host, email, avatar)
 VALUES   
-    ('Javier', 'Torres', true, 'jt123@gmail.com'),
-    ('Steve', 'Dean', true, 'sd123@outlook.com'),
-    ('Nicholas', 'Lawton', true, 'nl123@outlook.com'),
-    ('Shawn', 'Couch', true, 'sc123@gmail.com'),
-    ('Hank', 'Hill', false, 'hh123@gmail.com'),
-    ('Steve', 'Stover', false, 'ss123@gmail.com'),
-    ('Jim', 'Bob', false, 'jb123@gmail.com'),
-    ('Alice', 'Glass', false, 'ag123@gmail.com'),
-    ('Glen', 'Smith', false, 'gs123@gmail.com'),
-    ('Ninki', 'Minjaj', true, 'nm123@gmail.com');
+    ('Javier', 'Torres', true, 'jt123@gmail.com', 'https://pbs.twimg.com/media/FB_W-xPWUAE996n.jpg'),
+    ('Steve', 'Dean', true, 'sd123@outlook.com', 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/1-handsome-man-taking-selfie-on-the-phone-michal-bednarek.jpg'),
+    ('Nicholas', 'Lawton', true, 'nl123@outlook.com', 'https://en.wikifur.com/w/images/thumb/c/c0/Aj_selfie.jpeg/240px-Aj_selfie.jpeg'),
+    ('Shawn', 'Couch', true, 'sc123@gmail.com', 'https://bbts1.azureedge.net/images/p/full/2021/07/f44d92a6-a5c6-4e5e-a161-43dcf614ef9e.jpg'),
+    ('Hank', 'Hill', false, 'hh123@gmail.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxegH0kICTBLja4d7SPFSKxmsmc27O4ef1aQ&usqp=CAU'),
+    ('Steve', 'Stover', false, 'ss123@gmail.com', 'https://cdn.discordapp.com/attachments/701975858226659358/1097917475821195324/Screenshot_20230418_121143.jpg'),
+    ('Jim', 'Bob', false, 'jb123@gmail.com', 'https://pbs.twimg.com/media/DqcLwysUcAAenhK.jpg:large'),
+    ('Alice', 'Glass', false, 'ag123@gmail.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Y2CXKS8Vubu0v8WeAv9yQ_eD5-ZXoWYBHw&usqp=CAU'),
+    ('Glen', 'Smith', false, 'gs123@gmail.com', 'https://www.myany.city/sites/default/files/styles/scaled_cropped_medium__260x260/public/field/image/node-related-images/sample-dwight-k-schrute.jpg?itok=8TfRscbA'),
+    ('Ninki', 'Minjaj', true, 'nm123@gmail.com', 'https://img.buzzfeed.com/buzzfeed-static/static/2018-10/9/14/asset/buzzfeed-prod-web-[…]12%2C0&downsize=900:*&output-format=auto&output-quality=auto');
 
 INSERT INTO properties 
     (propertyName, stars, reviewsNum,
@@ -197,5 +197,7 @@ VALUES
     (1, 'This place is awful. On god frfr', 1, 5),
     (1, 'It was alright', 3, 4),
     (1, 'Gee Golly this is cool', 5, 2),
-    (1, 'smells weird and I found a bug outside', 2, 7);
+    (1, 'smells weird and I found a bug outside', 2, 7),
+    (1, 'Don''t mess with Farmer Maggots crops he doesn''t like that', 3, 3),
+    (1, 'If you get a chance, party with Merry and Pippin at the Green Dragon Inn', 5, 1);
     
