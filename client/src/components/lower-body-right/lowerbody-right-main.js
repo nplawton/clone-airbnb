@@ -70,8 +70,7 @@ const LowerBodyRight = ({ rating, numReviews, nightPrice }) => {
             Reserve
           </div>
         </button>
-      </div>
-      <div className="save_win">
+        <div className="save_win">
           <div id="save_column">
             <h1 id="save_title">Book now and save 20%.</h1>
             <h3 id='save_subtext'> 
@@ -94,6 +93,7 @@ const LowerBodyRight = ({ rating, numReviews, nightPrice }) => {
           />
           Report this listing
       </button>
+      </div>
     </div>
   )
 
