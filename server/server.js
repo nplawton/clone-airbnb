@@ -11,7 +11,7 @@ const sql = postgres(`postgres://${username}:${password}@${host}:${pgPort}/${dbN
 
 //in terminal enter command: nodemon <path to server.js file>
 //WARNING MIGRATION.SQL FILE WILL DROP SPECIFIED TABLES BEFORE CREATING AND SEEDING
-//in new terminal enter command: psql <database name> -f migration.sql
+//in new terminal enter command: psql <database name> -f migration.sqlrm
 
 const PORT = 5172;
 const server = express();
