@@ -1,82 +1,72 @@
-# simple-update-notifier [![GitHub stars](https://img.shields.io/github/stars/alexbrazier/simple-update-notifier?label=Star%20Project&style=social)](https://github.com/alexbrazier/simple-update-notifier/stargazers)
+# Clone - Airbnb
 
-[![CI](https://github.com/alexbrazier/simple-update-notifier/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/alexbrazier/simple-update-notifier/actions)
-[![Dependencies](https://img.shields.io/librariesio/release/npm/simple-update-notifier)](https://www.npmjs.com/package/simple-update-notifier?activeTab=dependencies)
-[![npm](https://img.shields.io/npm/v/simple-update-notifier)](https://www.npmjs.com/package/simple-update-notifier)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/simple-update-notifier)](https://bundlephobia.com/result?p=simple-update-notifier)
-[![npm downloads](https://img.shields.io/npm/dw/simple-update-notifier)](https://www.npmjs.com/package/simple-update-notifier)
-[![License](https://img.shields.io/npm/l/simple-update-notifier)](./LICENSE)
+## Description
+> Clone-Airbnb is a Front-End Capstone project developed by the Girl Scout Rangers from MCSP-19. The Clone-Airbnb is a full-stack Airbnb product page replica built in a week with remote development team of three. 
 
-Simple update notifier to check for npm updates for cli applications.
+![Fantasybnb](https://live.staticflickr.com/65535/52851458096_e15ea93fa0_c.jpg)
 
-<img src="./.github/demo.png" alt="Demo in terminal showing an update is required">
+## Table of Contents
+- [Clone - Airbnb](#clone---airbnb)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Instalation](#instalation)
+    - [Server Side](#server-side)
+    - [Client Side](#client-side)
+  - [Usage](#usage)
+  - [ScreenShot](#screenshot)
+  - [Contributors](#contributors)
+  - [My Contributions](#my-contributions)
+  - [Tech](#tech)
+  - [License](#license)
 
-Checks for updates for an npm module and outputs to the command line if there is one available. The result is cached for the specified time so it doesn't check every time the app runs.
+## Instalation
 
-## Install
+### Server Side
+ - Program is using a postrges database the user must know their postgreSQL username and password.
+ - Run npm install to insert of needed dependencies 
+ - In the server.js file switch the username and password to the user
+ - Enter in a database name in the dbName variable. The database will be created in postgress
+ - In the terminal type nodemon server.js
+ - Open a new terminal window and create the new database table 
+   - Command to enter postgres through VS Code sudo -u postgres psql
+   - Type in CREATE DATBASE &#10096;database name&#10097;
+   - Close out of the postgres prompt
+ - Once the database is created type node &#10096;database name&#10097; -f migration.js
+ - This will seed the database and seed file information
 
-```bash
-npm install simple-update-notifier
-OR
-yarn add simple-update-notifier
-```
+### Client Side
+- Open a third terminal window
+- Run npm install to insert of needed dependencies
+- Run npm start to start the web application
 
 ## Usage
+> This project was for education purposes to teach a remote group of students how to use the Agile methodology, stregthen their React and DEVOP skills, and learn to use Git Flow, while building a replica of a website. 
 
-```js
-import updateNotifier from 'simple-update-notifier';
-import packageJson from './package.json' assert { type: 'json' };
+## ScreenShot
+![Sitelook](https://live.staticflickr.com/65535/52850874047_b1f9d78f6f_w.jpg)
 
-updateNotifier({ pkg: packageJson });
-```
+## Contributors
+- Nicholas Lawton
+  - https://github.com/nplawton
+- Steven Dean
+  - https://github.com/EZSteezy
+- Javier Torres
+  - https://github.com/jtorres95
 
-### Options
+## My Contributions
+> As this was a group project, we were each assigned certain components to build. I was charged with building the functionality of the search bar, the map functionality, the language and currency functionality, along with other components and modals throughout the project. I served a scrum master for the project and was responsible for all merge requests.
 
-#### pkg
+![searchbar1](https://live.staticflickr.com/65535/52850749219_c31c3b952a.jpg)
 
-Type: `object`
+![searchbar2](https://live.staticflickr.com/65535/52850561161_e6fccf3ede_w.jpg)
 
-##### name
+![map](https://live.staticflickr.com/65535/52849989127_a6c5d8aabd_b.jpg)
 
-_Required_\
-Type: `string`
+## Tech
+- Front End: React, Leaflet, React-Calendar
+- Backend: Express.js
+- Database: Postgresql
+- Tools: GitLabs, GitHub, Thunder Client, VS Code
 
-##### version
-
-_Required_\
-Type: `string`
-
-#### updateCheckInterval
-
-Type: `number`\
-Default: `1000 * 60 * 60 * 24` _(1 day)_
-
-How often to check for updates.
-
-#### shouldNotifyInNpmScript
-
-Type: `boolean`\
-Default: `false`
-
-Allows notification to be shown when running as an npm script.
-
-#### distTag
-
-Type: `string`\
-Default: `'latest'`
-
-Which [dist-tag](https://docs.npmjs.com/adding-dist-tags-to-packages) to use to find the latest version.
-
-#### alwaysRun
-
-Type: `boolean`\
-Default: `false`
-
-When set, `updateCheckInterval` will not be respected and a check for an update will always be performed.
-
-#### debug
-
-Type: `boolean`\
-Default: `false`
-
-When set, logs explaining the decision will be output to `stderr` whenever the module opts to not print an update notification
+## License
+> The license used for this project is MIT.
