@@ -1,7 +1,7 @@
 # Clone - Airbnb
 
 ## Description
-> Clone-Airbnb is a Front-End Capstone project developed by the Girl Scout Rangers from MCSP-19. The Clone-Airbnb is a full-stack Airbnb product page replica built in a week with remote development team of three. 
+> Clone-Airbnb is a Front-End Capstone project developed by the Girl Scout Rangers from MCSP-19. The Clone-Airbnb is a full-stack Airbnb product page replica built in a week with remote development team of three personnel. 
 
 ![Fantasybnb](https://live.staticflickr.com/65535/52851458096_e15ea93fa0_c.jpg)
 
